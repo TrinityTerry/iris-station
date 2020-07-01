@@ -1,0 +1,57 @@
+.order-details-column {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 65px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 !important;
+    /* scroll-behavior: smooth; */
+    
+}
+
+.order-details-title {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 900;
+    background-color: white;
+    padding: 10px;
+}
+
+.order-details-content {
+    padding: 10px;
+}
+
+
+.order-details-mobile-view {
+    display: none;
+}
+
+.order-history-list {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-around;
+    /* height: 100 */
+}
+
+.card-number-column {
+    text-align: left;
+}
+
+.card-expiration-column {
+    text-align: left;
+}
+
+@media screen and (max-width: 960px) {
+    .order-details-mobile-view {
+        display: block;
+    }
+
+    .order-details-main-view {
+        display: none !important;
+    }
+  }
